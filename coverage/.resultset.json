@@ -208,6 +208,8 @@
           null,
           null,
           1,
+          1,
+          1,
           null,
           1,
           null
@@ -237,10 +239,12 @@
           null
         ]
       },
-      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/models/ride_mechanic.rb": {
+      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/models/park.rb": {
         "lines": [
           1,
           1,
+          1,
+          null,
           1,
           null
         ]
@@ -257,17 +261,42 @@
           null
         ]
       },
-      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/models/park.rb": {
+      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/models/ride_mechanic.rb": {
         "lines": [
           1,
           1,
           1,
+          null
+        ]
+      },
+      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/controllers/mechanics_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
           null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1595004752
+    "timestamp": 1595006948
   }
 }
