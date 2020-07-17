@@ -15,11 +15,6 @@ ActiveRecord::Schema.define(version: 20200717153604) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "amusement_parks", force: :cascade do |t|
-    t.string "name"
-    t.float "price"
-  end
-
   create_table "mechanics", force: :cascade do |t|
     t.string "name"
     t.integer "experience"
