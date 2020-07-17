@@ -1,0 +1,13 @@
+<p>Mechanic: <%= @mechanic.name %></p>
+<p>Years of experience: <%= @mechanic.experience %></p>
+<p>Current rides they are working on:</p>
+<ul><% @mechanic.rides.each do |ride |%>
+  <li><%= ride.name %></li>
+<% end %>
+</ul>
+<p>Add a ride to workload:</p>
+<%= form_tag "/mechanics/#{@mechanic.id}", method: :post do %>
+<p><%= label_tag :ride_id %></p>
+<%= text_field_tag :ride_id %>
+<%= submit_tag 'Submit' %>
+<% end %>
