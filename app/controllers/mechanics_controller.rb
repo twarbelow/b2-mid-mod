@@ -11,7 +11,7 @@ class MechanicsController < ApplicationController
     mechanic = Mechanic.find(params[:id])
     new_ride = Ride.find(params[:ride_id])
     mechanic.rides << new_ride
-    flash[:notice] = "You have added #{new_ride.name} to #{mechanic.name}'s workload'"
+    flash[:notice] = "You have added #{new_ride.name} to #{mechanic.name}'s workload!"
     redirect_to "/mechanics/#{mechanic.id}"
   end
 end
