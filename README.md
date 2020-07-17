@@ -38,8 +38,8 @@ Ex:
    Sam Mills - 10 years of experience
    Kara Smith - 11 years of experience
 
-
-Story 2
+!would like to figure out how to get decimals to 2 places, could change price to a string in the db!
+DONE Story 2
 As a visitor,
 When I visit an amusement park’s show page
 I see the name and price of admissions for that amusement park
