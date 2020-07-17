@@ -11,7 +11,6 @@ RSpec.describe 'show page' do
     m.rides << [r1, r2]
 
     visit "/mechanics/#{m.id}"
-    save_and_open_page
     expect(page).to have_content("Mechanic: #{m.name}")
     expect(page).to have_content("Years of experience: #{m.experience}")
     expect(page).to have_content("#{r1.name}")
@@ -19,8 +18,8 @@ RSpec.describe 'show page' do
     expect(page).to have_content("Add a ride to workload:")
     fill_in :ride_id, with: "#{r3.id}"
     click_button "Submit"
-    expect(current_path).to eq "/mechanics/#{m.id}"
-    expect(page).to have_content("#{m3.name}")
+    expect(page).to have_content("#{r3.name}")
+
   end
 end
 
