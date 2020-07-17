@@ -28,7 +28,7 @@ You will need to create all the migrations. You do not need to do model testing 
 Read each story carefully.
 
 
-Story 1
+DONE - Story 1
 As a user,
 When I visit a mechanics index page
 I see a header saying “All Mechanics”
