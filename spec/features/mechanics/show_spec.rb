@@ -3,20 +3,23 @@ require 'rails_helper'
 RSpec.describe 'show page' do
   it 'shows name, experience, names of rides they work on, usable form to add to workload' do
     m = Mechanic.create(name: "Penny", experience: 6)
-    r1 = m.rides.create(name: "Big Bad Betty", thrill_rating: 8)
-    r2 = m.rides.create(name: "Loop-d-Swoop-d-Loop", thrill_rating: 5)
-    r3 = Ride.create(name: "Little Woah", thrill_rating: 10)
+    p = Park.create(name: "Fun time loops", price: 10.00)
+    r1 = p.rides.create(name: "Big Bad Betty", thrill_rating: 8)
+    r2 = p.rides.create(name: "Loop-d-Swoop-d-Loop", thrill_rating: 5)
+    r3 = p.rides.create(name: "Little Woah", thrill_rating: 10)
+
+    m.rides << [r1, r2]
 
     visit "/mechanics/#{m.id}"
-
+    save_and_open_page
     expect(page).to have_content("Mechanic: #{m.name}")
     expect(page).to have_content("Years of experience: #{m.experience}")
     expect(page).to have_content("#{r1.name}")
     expect(page).to have_content("#{r2.name}")
     expect(page).to have_content("Add a ride to workload:")
-    fill_in :ride, with: "#{r3.id}"
+    fill_in :ride_id, with: "#{r3.id}"
     click_button "Submit"
-    expect(path).to eq "/mechanics/#{m.id}"
+    expect(current_path).to eq "/mechanics/#{m.id}"
     expect(page).to have_content("#{m3.name}")
   end
 end
