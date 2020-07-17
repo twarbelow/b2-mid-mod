@@ -208,6 +208,8 @@
           null,
           null,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -245,8 +247,26 @@
           1,
           null
         ]
+      },
+      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/controllers/parks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/taija/turing/2mod/challenges/b2-mid-mod/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1595002547
+    "timestamp": 1595003746
   }
 }
